@@ -101,16 +101,6 @@ curl -X POST http://localhost:8000/ask \
 - The `.env` file should be added to `.gitignore` (already included)
 - CORS is currently set to allow all origins - restrict this in production
 
-## Sensitive Data Analysis
-
-The codebase was analyzed for sensitive data. Findings:
-
-- **API Key Usage**: The application uses `GOOGLE_API_KEY` environment variable in both `main.py` and `test_api.py`
-- **No Hardcoded Secrets**: No API keys, passwords, or secrets were found hardcoded in the source code
-- **Environment Variables**: The application properly uses `python-dotenv` to load sensitive data from a `.env` file
-- **Git Protection**: A `.gitignore` file has been added to prevent committing `.env` files and other sensitive data
-- **CORS Configuration**: The API currently allows all origins (`allow_origins=["*"]`) which should be restricted in production
-
 **Recommendations**:
 - Ensure the `.env` file is never committed to version control
 - Restrict CORS origins to specific domains in production
