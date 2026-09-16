@@ -1,6 +1,6 @@
 # Chatbot-API-Checking
 
-A FastAPI-based chatbot application that uses Google's Generative AI (Gemini 1.5 Flash) to answer questions through a web interface.
+A FastAPI-based chatbot application that uses Google's Generative AI (Gemini 1.5 Flash) to check current api is working or not.
 
 ## Project Structure
 
